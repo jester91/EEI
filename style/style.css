@@ -1,6 +1,6 @@
 body#indexBody {
   background: rgb(9, 7, 51);
-  
+
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
 }
@@ -156,7 +156,14 @@ article {
 #Art1Txt1 {
   width: 100%;
   color: #ffffff;
-  padding-top: 15%;
+  text-align: center;
+}
+
+#Art1Txt2 {
+  width: 100%;
+  color: #ffffff;
+  padding-top: 5%;
+  margin-bottom: 5%;
   text-align: center;
 }
 article {
@@ -535,21 +542,21 @@ article {
   margin-top: 50px;
 }
 
-.RoadMapBlock h3{
+.RoadMapBlock h3 {
   text-align: center;
   font-size: 15px;
 }
 
-.RoadMapBlock h2{
+.RoadMapBlock h2 {
   text-align: center !important;
   font-size: 20px;
 }
 
-.RoadMapBlock p{
+.RoadMapBlock p {
   margin-left: 10%;
 }
 
-.RoadMapBlockDiv{
+.RoadMapBlockDiv {
   width: auto;
   display: flex;
   flex-direction: column;
@@ -558,13 +565,14 @@ article {
 }
 
 .RoadmapDiamond {
-  background-color: #0d093b;
+  background-color: #1003a0;
   height: 45px;
   width: 45px;
   align-self: center;
   transform: rotate(45deg);
   float: right;
   border-radius: 20%;
+  display: none;
 }
 
 .RoadMapBlock {
@@ -632,7 +640,7 @@ article {
 #inMessage {
   height: 250px;
   width: 100%;
-  color: #0d093b!important;
+  color: #0d093b !important;
   /*background-color: transparent;*/
   font-size: 25px;
   border-radius: 10px;
@@ -653,7 +661,7 @@ article {
 }
 
 /*Footer*/
-#HSUP_Logo{
+#HSUP_Logo {
   width: auto;
   height: 100px;
 }
@@ -1007,6 +1015,7 @@ label {
   h2 {
     font-size: 72px;
   }
+ 
 
   #ProjectName {
     display: block;
@@ -1176,7 +1185,6 @@ label {
     margin-left: 3%;
   }
 
-
   #TeamMember3 {
     margin-left: 3%;
   }
@@ -1198,10 +1206,9 @@ label {
   }
 
   /*Road Map*/
-  .RoadMapBlock h3{
+  .RoadMapBlock h3 {
     font-size: 30px;
   }
-
 
   .RoadMapBlock h2 {
     font-size: 45px;
@@ -1230,7 +1237,7 @@ label {
     margin-left: auto;
   }
 
-  #RoadMapBlock5{
+  #RoadMapBlock5 {
     margin-right: auto;
   }
 
@@ -1390,12 +1397,41 @@ section .heading b {
   color: #ffffff;
   margin-left: -35px;
 }
+section .heading1 {
+  display: inline-block;
+  position: relative;
+  color: #0d093b;
+  font-size: 40px;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+section .heading1::before {
+  position: absolute;
+  content: "";
+  width: 8%;
+  height: 7px;
+  left: 54%;
+  transform: translateX(0%);
+  bottom: 15%;
+  background-color: #0d093b;
+}
+
+section .heading1 b {
+  color: #ffffff;
+  margin-left: -35px;
+}
 
 .wrapper {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.bejarat {
+  width: 100%;
 }
 
 .wrapper .container {
@@ -1530,19 +1566,18 @@ abbr:hover::after {
   z-index: 1;
 }
 
-.smallerText{
-  font-size: 24px!important;
+.smallerText {
+  font-size: 24px !important;
 }
 
-#CaseStudies a{
-  text-decoration: none!important;
+#CaseStudies a {
+  text-decoration: none !important;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap'); 
-
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
 .frame {
-  font-family: 'Muli', sans-serif;
+  font-family: "Muli", sans-serif;
   overflow: hidden;
   margin: 0;
   background-image: linear-gradient(130deg, #ebfeff, #02576a);
@@ -1552,48 +1587,48 @@ abbr:hover::after {
   align-items: center;
 }
 .containerslide {
-    width: 100%;
-    display: flex;
-    padding: 0 20px;
+  width: 100%;
+  display: flex;
+  padding: 0 20px;
 }
 .slide {
-    height: 80vh;
-    border: #fff solid 1px;
-    border-radius: 15px;
-    margin: 5px;
-    cursor: pointer;
-    color: #fff;
-    flex: 1;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: relative;
-    transition: all 0.5s ease-in-out;
+  height: 80vh;
+  border: #fff solid 1px;
+  border-radius: 15px;
+  margin: 5px;
+  cursor: pointer;
+  color: #fff;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 0.5s ease-in-out;
 }
 
 .slide h3 {
-    position: absolute;
-    font-size: 28px;
-    top: 30px;
-    left: 30px;
-    margin: 0;
-    opacity: 0;
+  position: absolute;
+  font-size: 28px;
+  top: 30px;
+  left: 30px;
+  margin: 0;
+  opacity: 0;
 }
 .slide.active {
-    flex: 15;
+  flex: 15;
 }
 .slide.active h3 {
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out 0.6s;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out 0.6s;
 }
 
 section#img01 {
   /*background-image: url('../Images/welcome_image.jpg');*/
-  background-image: url('https://media.tenor.com/yRRa_MfcQAgAAAAC/wrc-rally.gif');
+  background-image: url("https://media.tenor.com/yRRa_MfcQAgAAAAC/wrc-rally.gif");
 }
 
 section.normal {
-  background-color: #241A32;
+  background-color: #241a32;
   color: white;
   min-height: 300px;
   min-width: 350px;
