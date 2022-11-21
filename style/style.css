@@ -620,6 +620,7 @@ article {
   height: 35px;
   background-color: transparent;
   font-size: 25px;
+  color: red;
   border-color: rgb(202, 21, 21);
   border-radius: 10px;
   margin-top: 15px;
@@ -632,6 +633,7 @@ article {
   width: 100%;
   height: 35px;
   background-color: transparent;
+  color: red;
   border-color: rgb(202, 21, 21);
   font-size: 25px;
   border-radius: 10px;
@@ -645,6 +647,7 @@ article {
   height: 250px;
   width: 100%;
   background-color: transparent;
+  color: red;
   border-color: rgb(202, 21, 21);
   font-size: 25px;
   border-radius: 10px;
@@ -1645,4 +1648,65 @@ section.primeiraimagem {
   box-shadow: inset 3px 3px 9px rgba(0, 0, 0, 0.466);
 
   height: 100vh;
+}
+
+.services-section{
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+}
+.services-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-box{
+  max-width: 33.33%;
+  padding: 10px;
+  text-align: center;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.service-icon{
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #ca1515;
+  color:#ca1515;
+  transform: rotate(45deg);
+  margin-bottom: 30px;
+  margin-top: 16px;
+  transition: 0.3s linear;
+}
+.service-icon i{
+  line-height: 70px;
+  transform: rotate(-45deg);
+  font-size: 26px;
+}
+.service-box:hover .service-icon{
+  background: #ca1515;
+  color: #ddd;
+}
+.service-title{
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.service-desc{
+  font-size: 14px;
+}
+
+@media screen and (max-width:768px) {
+  .service-box{
+    max-width: 50%;
+  }
+  
+}
+
+@media screen and (max-width:480px) {
+  .service-box{
+    max-width: 100%;
+  }
 }
