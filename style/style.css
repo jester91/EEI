@@ -1,5 +1,5 @@
 body#indexBody {
-  background: rgb(9, 7, 51);
+  background: rgba(14,14,14)!important;
 
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
@@ -64,7 +64,7 @@ nav {
   padding-top: 30px;
   width: 100%;
   left: 0;
-  background-color: #0d093b;
+  background-color: rgba(14,14,14)!important;
   position: fixed;
 }
 nav ul {
@@ -106,7 +106,7 @@ nav ul li.active {
 
 #ProjectNameMobile {
   z-index: 5;
-  background-color: #0d093b;
+  background-color: rgba(14,14,14)!important;
   width: 100%;
   display: block;
   position: fixed;
@@ -139,7 +139,7 @@ nav ul li.active {
 
 h2 {
   font-size: 40px;
-  color: #0d093b;
+  color: #fff;
 }
 article {
   width: 100%;
@@ -205,12 +205,12 @@ article {
 
 #ButtonContactUs {
   background-color: transparent;
-  color: #2de1af;
+  color: rgb(202, 21, 21);
   text-align: center;
   text-decoration: none;
   width: 30%;
   height: 35px;
-  border: 2px solid #2de1af;
+  border: 2px solid rgb(202, 21, 21);
   border-radius: 10px;
   font-family: "Montserrat", sans-serif;
 }
@@ -279,11 +279,11 @@ article {
 }
 
 .toggle input:checked + .slider {
-  border-color: #0d093b;
+  border-color: #1D1D1D!;
 }
 
 .toggle input:checked + .slider::before {
-  border-color: #0d093b;
+  border-color: #1D1D1D!;
   background-color: #c6e5ff;
   transform: translateX(calc(var(--width) - var(--height)));
 }
@@ -294,7 +294,7 @@ article {
   left: 0;
   width: 100%;
   height: 100%;
-  color: #4d4d4d;
+  color: #fff;
   font-size: 12px;
   font-family: sans-serif;
   transition: all 0.4s ease-in-out;
@@ -375,15 +375,15 @@ article {
 #OurSolution {
   width: 96%;
   padding: 2%;
-  background-color: #2de1af;
+  background-image: #1d1d1d!important;
   margin-top: 30px;
-  color: #0d093b;
+  color: #fff;
   text-align: center;
 }
 
 #ButtonInterest {
-  background-color: #2de1af;
-  color: #0d093b;
+  background-color: transparent;
+  color: rgb(202, 21, 21);
   text-align: center;
   text-decoration: none;
   width: 30%;
@@ -391,7 +391,7 @@ article {
   margin-right: 35%;
   margin-bottom: 20px;
   height: 35px;
-  border: 4px solid #0d093b;
+  border: 4px solid rgb(202, 21, 21);
   border-radius: 10px;
 }
 #ButtonInterest a {
@@ -423,7 +423,7 @@ article {
   width: 90%;
   display: flex;
   flex-direction: column;
-  background-color: #2de1af;
+  background-color: #303433;
   padding: 5%;
 }
 
@@ -588,6 +588,7 @@ article {
   font-weight: 900;
 }
 #HomeForm {
+  background-color: #1d1d1d!important;
   padding: 3%;
   width: 94%;
   left: 0;
@@ -606,58 +607,62 @@ article {
 #inName {
   width: 100%;
   height: 35px;
-  /*background-color: transparent;*/
+  color: red;
+  background-color: transparent;
+  border-color: rgb(202, 21, 21);
   font-size: 25px;
+  text-align: center;
   border-radius: 10px;
-  border-color: #0d093b;
-  color: #0d093b;
 }
 
 #inMail {
   width: 100%;
   height: 35px;
-  /*background-color: transparent;*/
+  background-color: transparent;
   font-size: 25px;
+  border-color: rgb(202, 21, 21);
   border-radius: 10px;
   margin-top: 15px;
   margin-bottom: 5px;
-  border-color: #0d093b;
-  color: #0d093b;
+  text-align: center;
+
 }
 
 #inPhone {
   width: 100%;
   height: 35px;
-  /*background-color: transparent;*/
+  background-color: transparent;
+  border-color: rgb(202, 21, 21);
   font-size: 25px;
   border-radius: 10px;
   margin-top: 15px;
   margin-bottom: 5px;
-  border-color: #0d093b;
-  color: #0d093b;
+  text-align: center;
+
 }
 
 #inMessage {
   height: 250px;
   width: 100%;
-  color: #0d093b !important;
-  /*background-color: transparent;*/
+  background-color: transparent;
+  border-color: rgb(202, 21, 21);
   font-size: 25px;
   border-radius: 10px;
   margin-top: 20px;
-  border-color: #0d093b;
+  text-align: center;
+
 }
 
 #ButtonSendMessage {
-  margin-top: 20px;
-  font-size: 20px;
-  /*background-color: transparent;*/
-  color: #0d093b;
+  background-color: transparent;
+  color: rgb(202, 21, 21);
   text-align: center;
   text-decoration: none;
-  border-radius: 10px;
-  width: 60%;
+  width: 30%;
   height: 35px;
+  border: 2px solid rgb(202, 21, 21);
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
 }
 
 /*Footer*/
@@ -667,7 +672,7 @@ article {
 }
 
 footer {
-  background-color: #0d093b;
+  background-color: rgba(14,14,14)!important;
   width: 100%;
   left: 0;
 }
@@ -763,7 +768,6 @@ footer .fab {
   align-items: center;
   color: #ffffff;
   background-color: #2de1af;
-  color: #0d093b;
 }
 
 .question label {
@@ -771,7 +775,7 @@ footer .fab {
 }
 
 .question h2 {
-  color: #0d093b;
+  color: #fff;
   font-size: 30px;
   width: 100%;
 }
@@ -892,7 +896,7 @@ label {
   display: none;
   margin-top: 20px;
   background-color: #2de1af;
-  color: #0d093b;
+  color: rgba(14,14,14)!important;
   text-align: center;
   text-decoration: none;
   border-radius: 10px;
@@ -1097,18 +1101,18 @@ label {
   }
 
   .ButtonFillOut:hover {
-    background-color: #0d093b;
+    background-color: rgba(14,14,14)!important;
     color: #ffffff;
   }
 
   #ButtonContactUs:hover {
-    background-color: #0d093b;
-    color: #ffffff;
+    background-color: rgba(14,14,14)!important;
+    color: rgb(202, 21, 21);
   }
 
   #ButtonInterest:hover {
-    background-color: #0d093b;
-    color: #ffffff;
+    background-color: rgba(14,14,14)!important;
+    color: rgb(202, 21, 21);
   }
 
   #ButtonSendMessage {
@@ -1116,8 +1120,8 @@ label {
   }
 
   #ButtonSendMessage:hover {
-    background-color: #0d093b;
-    color: #ffffff;
+    background-color: rgba(14,14,14)!important;
+    color: rgb(202, 21, 21);
   }
   /*Coins*/
 
@@ -1348,12 +1352,12 @@ section {
   position: relative;
   min-height: 10vh;
   width: 100%;
-  background-color: #2de1af;
+  background-color: #1d1d1d!important;
   overflow: hidden;
 }
 
 section h2 {
-  color: #ffffff;
+  color: #fff;
 }
 section h3 {
   color: #ffffff;
@@ -1375,7 +1379,7 @@ section h3 {
 section .heading {
   display: inline-block;
   position: relative;
-  color: #0d093b;
+  color: #ebfeff;
   font-size: 40px;
   padding: 20px;
   width: 100%;
@@ -1390,7 +1394,7 @@ section .heading::before {
   left: 50%;
   transform: translateX(-50%);
   bottom: 15%;
-  background-color: #0d093b;
+  background-color: rgb(255, 255, 255)!important;
 }
 
 section .heading b {
@@ -1400,7 +1404,7 @@ section .heading b {
 section .heading1 {
   display: inline-block;
   position: relative;
-  color: #0d093b;
+  color: rgb(255, 255, 255)!important;
   font-size: 40px;
   padding: 20px;
   width: 100%;
@@ -1415,7 +1419,7 @@ section .heading1::before {
   left: 54%;
   transform: translateX(0%);
   bottom: 15%;
-  background-color: #0d093b;
+  background-color: rgb(202, 21, 21)!important;
 }
 
 section .heading1 b {
@@ -1438,7 +1442,7 @@ section .heading1 b {
   position: relative;
   width: 350px;
   color: #ffffff;
-  background: #407060;
+  background: rgb(202, 21, 21);
   margin: 40px 10px;
   padding: 30px;
   border-radius: 3px;
@@ -1501,14 +1505,14 @@ section .heading1 b {
   font: 30px;
   display: block;
   text-align: left;
-  color: #2de1af;
+  color: #fff;
 }
 
 .wrapper .container .right {
   font: 30px;
   display: block;
   text-align: right;
-  color: #2de1af;
+  color: #fff;
 }
 
 .wrapper .container .social {
@@ -1525,23 +1529,23 @@ section .heading1 b {
 }
 
 .wrapper .container .social i:hover {
-  color: #2de1af;
+  color: rgb(202, 21, 21);
 }
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ here comes the color of the placeholder form*/
-  color: #2de1af;
+  color: rgba(202, 21, 21, 0.526);
   opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #2de1af;
+  color: rgba(202, 21, 21, 0.526);
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: #2de1af;
+  color: rgba(202, 21, 21, 0.526);
 }
 
 html {
@@ -1577,7 +1581,6 @@ abbr:hover::after {
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 
 .frame {
-  font-family: "Muli", sans-serif;
   overflow: hidden;
   margin: 0;
   background-image: linear-gradient(130deg, #ebfeff, #02576a);
