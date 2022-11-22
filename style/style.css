@@ -165,6 +165,7 @@ article {
   padding-top: 5%;
   margin-bottom: 5%;
   text-align: center;
+  line-height: 42px;
 }
 article {
   padding: 0;
@@ -376,7 +377,8 @@ article {
   width: 96%;
   padding: 2%;
   background-image: #1d1d1d!important;
-  margin-top: 30px;
+  margin-top: 24px;
+  line-height: 42px;
   color: #fff;
   text-align: center;
 }
@@ -433,6 +435,11 @@ article {
 
 #CaseStudies p {
   margin: 3%;
+  line-height:150%;
+  color: #fff;
+}
+#CaseStudies a {
+  font-size: 22px;
 }
 #CS1 {
   display: flex;
@@ -1019,6 +1026,15 @@ label {
 }
 
 @media only screen and (min-width: 1000px) {
+  #CaseStudies a {
+    font-size: 30px;
+    font-weight:bolder;
+    text-decoration: underline;
+  }
+  #HomeArticle1 h3 {
+    font-size: 24px;
+  }
+
   h2 {
     font-size: 72px;
   }
@@ -1366,6 +1382,9 @@ section h3 {
   color: #ffffff;
   text-align: center;
 }
+#HomeArticle1 h3 {
+  font-size: 20px;
+}
 
 @keyframes gradient {
   0% {
@@ -1629,7 +1648,6 @@ abbr:hover::after {
 }
 
 section#img01 {
-  /*background-image: url('../Images/welcome_image.jpg');*/
   background-image: url("https://media.tenor.com/yRRa_MfcQAgAAAAC/wrc-rally.gif");
 }
 
@@ -1690,12 +1708,12 @@ section.primeiraimagem {
   color: #ddd;
 }
 .service-title{
-  font-size: 18px;
+  font-size: 24px;
   text-transform: uppercase;
   margin-bottom: 10px;
 }
 .service-desc{
-  font-size: 14px;
+  font-size: 18px;
 }
 
 @media screen and (max-width:768px) {

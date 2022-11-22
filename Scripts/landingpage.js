@@ -46,8 +46,8 @@ window.addEventListener("scroll", function () {
 });
 
 function changeOurSolution(){
-  var text1="<b>Ez egy leirás szöveg a versenyzők számára lorem ipsum dolore Ez egy leirás szöveg a versenyzők számára lorem ipsum doloreEz egy leirás szöveg a versenyzők számára lorem ipsum doloreEz egy leirás szöveg a versenyzők számára lorem ipsum dolore</b>"
-  var text2="<b>Ez pedig egy leirás azon utcai ügyfelek számára akik rendben akarják tartani a kocsijukat lorem ipsum doloreEz pedig egy leirás azon utcai ügyfelek számára akik rendben akarják tartani a kocsijukat lorem ipsum doloreEz pedig egy leirás azon utcai ügyfelek számára akik rendben akarják tartani a kocsijukat lorem ipsum doloreEz pedig egy leirás azon utcai ügyfelek számára akik rendben akarják tartani a kocsijukat lorem ipsum dolore</b>"
+  var text1="<b>Márkafüggetlenül bármilyen típusú és hajtású autók szervizelése nagy tapasztalattal, szakértelemmel és odaadással. Kapcsolatban állunk a legnagyobb alkatrész nagykereskedésekkel így mindig a legjobb minőséget tudjuk biztosítani. <br> Legyen szó akár a műszaki vizsga előtti, esetleg időszakos átvizsgálásról vagy bármilyen jellegű javításról fontos, hogy autója megbízható kezekben legyen! <br> Nálunk személyesen meggyőződhet minden beépített alkatrészről. <br> Verseny múltunk és jelenünk miatt a legújabb technológiákat használjunk, több éves tapasztalatinkkal, így a tőlünk telhető lehető legjobb szolgáltatást nyújtük Önnek és autójának.</b>"
+  var text2="<b>Ha érzed a késztetést, hogy feltépd az aszfaltot ÉS a murvát akkor a legjobb helyen jársz. Nálunk van arra lehetőséged, hogy valódi versenyző lehess, biztosítjuk számodra a technikai részt azaz a versenyautót, szerviz hátteret és a több éves elméleti és gyakorlati tudásunkat. Ha megakarod tenni az első lépésed a versenyző lét felé akkor keress minket telefonon vagy személyesen, ahol minden kérdésedre válaszolunk</b>"
   var x = document.getElementById("oursolution");
   if (x.innerHTML === text2) {
     x.innerHTML = text1;
