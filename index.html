@@ -12,7 +12,7 @@
     
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
     <link rel="stylesheet" href="Style/style.css" />
-    <link rel="icon" href="./Images/eei_logo-removebg.png" />
+    <link rel="icon" href="./Images/eei_logo.png" />
 
     <script src="./Scripts/myScript.js"></script>
     <link
@@ -44,7 +44,7 @@
         <nav>
           <p id="ProjectName">
             <a href="#" > <img
-              style="width: 150px"
+              style="width: 275px"
               src="/images/eei_logo-removebg.png"
               alt=""
             /></a>
@@ -57,21 +57,23 @@
             <li id="NavProduct" onclick="FunctionLifeInService()">
               <a>Élet a műhelyben</a>
             </li>
+            <li id="NavOurStory" onclick="FunctionOurStory()">
+              <a>Történetünk</a>
+            </li>
             <li id="NavCaseStudies" onclick="FunctionServiceOffer()">
-              <a>Ajánlatok</a>
+              <a>Ajánlataink</a>
             </li>
             <li id="NavContact" onclick="FunctionContact()">
               <a>Kapcsolat</a>
             </li>
             <li id="NavContact">
-              <a href="tel:36308205128">+36308205128</a> 
+              <a href="tel:+36308205128">+36308205128</a> 
             </li>
           </ul>
         </nav>
       </div>
       <div>
         <section class="primeiraimagem" id="img01">
-          <article>Parallax Website</article>
         </section>
       </div>
 
@@ -241,8 +243,44 @@
             </div>
         </div>
     </div>
+    <article id="OurStory" style="background-image: linear-gradient(110deg, #575c5c, rgba(14,14,14));">
+      <h2>Történetünk</h2>
+      <div id="CS1">
+        <img
+          class="Art4image"
+          src="./Images/versenyautok.jpg"
+          alt="Géppark felsorakozva"
+        />
+        <p>
+          Magyarországon elsők között kezdtük el használni a hibrid technológiát több verseny szériában is, mint például a SWIFT HYRID RX CUP-ban, Zalazone átadó, 2020 Országos Bajnokság Kakucsringen ezenfelül MNASZ-szel (Magyar Nemzeti Autósport Szövetség) is szerződésben állunk. A hibrid hajtás teljes mértékben saját fejlesztésünk, nem a létező Suzuki hibrid hajtást alakítottuk át.
+          
+        </p>
+      </div>
+      <div id="CS2">
+        <img
+          class="Art4image"
+          src="./Images/ujsagbeli_megjelenes.jpg"
+          alt="Újságbeli megjelenés Vaskó Dominik"
+        />
+        <p>
+          Maximalizmusunknak és professzionalizmusunknak hála versenyzőink a legtöbbet képesek kihozni versenyautóinkból, emiatt több verseny sorozatban is sikeresen helyálltak és győzedelmeskedtek legyen szó aszfatról vagy murváról.
+          
+        </p>
+      </div>
+      <div id="CS3">
+        <img
+          class="Art4image"
+          src="./Images/gyors_helyreallitas_a_palyadokkban.jpg"
+          alt="Fuvarozás, teherautó bérlés, bérbeadás, utánfutó bérlés,autómentés"
+        />
+        <p>
+          Nagyon kevés olyan verseny van ahol az autók nem érintkeznek vagy karamboloznak, de ilyen esetben sincs semmi okuk a pánikra, mivel csapatunk sok évnyi tapasztalattal rendelkezik márkafüggetlenül így könnyen és gyorsan tudják javítani a sérült elemeket és alkatrészeket.
+          
+        </p>
+      </div>
+    </article>
       <article id="CaseStudies">
-        <h2>Ajánlatok</h2>
+        <h2>Ajánlataink</h2>
         <div id="CS1">
           <img
             class="Art4image"
@@ -330,10 +368,7 @@
               <h3>Ügyfél</h3>
             </div>
             <p>
-              <span class="fa fa-quote-left left"></span>Vélemény egy ügyféltől
-              Vélemény egy ügyféltől Vélemény egy ügyféltől Vélemény egy
-              ügyféltől Vélemény egy ügyféltől Vélemény egy ügyféltől Vélemény
-              egy ügyféltől
+              <span class="fa fa-quote-left left"></span>Amióta megnyitották utcai szervizüket azóta hordom hozzájuk szervizelni az A7-es Audimat, nagyon kedvesek és segítőkészek. Profi csapat csak ajánlani tudom őket.
             </p>
             <span class="fa fa-quote-right right"></span>
             <div class="social">
@@ -365,7 +400,7 @@
       </section>
       <form
         id="HomeForm"
-        action="https://formsubmit.co/konrad.kovacs@outlook.com"
+        action="https://formsubmit.co/europeelectricindustries@gmail.com"
         method="POST"
         novalidate
       >
@@ -373,21 +408,21 @@
         <input type="hidden" name="_subject" value="Szerviz megkereses" />
         <input
           id="inName"
-          name="inName"
+          name="Név"
           type="text"
           placeholder="Neved"
           required
         />
         <input
           id="inMail"
-          name="inMail"
+          name="EmailCím"
           type="email"
           placeholder="Email címed"
           required
         />
         <input
           id="inPhone"
-          name="inPhone"
+          name="Telefonszám"
           type="phone"
           placeholder="Telefonszámod"
           pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
@@ -396,7 +431,7 @@
         <input type="hidden" name="_next" value="https://eei.netlify.app" />
         <textarea
           id="inMessage"
-          name="inMessage"
+          name="Üzenet"
           placeholder="Szükséges adatok, mint például szerviz igény és az alvázszámod"
           required
         ></textarea>
@@ -404,10 +439,9 @@
         <input id="ButtonSendMessage" type="submit" value="Küldés" />
         <h1 style="text-align: center; color: white">
           Vagy keress minket telefonon <br />
-          <a href="tel:36308205128" style="text-decoration: none; color:rgb(202, 21, 21)">+36308205128</a> 
+          <a href="tel:+36308205128" style="text-decoration: none; color:rgb(202, 21, 21)">+36308205128</a>
         </h1>
       </form>
-      
       <section>
         <div class="heading1"><b>Ahol megtalálsz</b> minket</div>
         <iframe
