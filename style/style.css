@@ -9,7 +9,7 @@ body#indexBody {
 }
 
 * {
-  font-family: "Montserrat", sans-serif;
+   font-family: "Montserrat", sans-serif; 
   font-weight: 1000;
 }
 
@@ -1025,6 +1025,7 @@ label {
 }
 
 @media only screen and (min-width: 600px) {
+  
   /*Footer*/
   footer p {
     font-size: 19px;
@@ -1069,7 +1070,7 @@ label {
     text-decoration: underline;
   }
   #HomeArticle1 h3 {
-    font-size: 24px;
+    font-size: 32px!important;
   }
 
   h2 {
@@ -1750,7 +1751,7 @@ section.primeiraimagem {
   margin-bottom: 10px;
 }
 .service-desc{
-  font-size: 18px;
+  font-size: 19px;
 }
 
 @media screen and (max-width:768px) {
@@ -1763,7 +1764,9 @@ section.primeiraimagem {
   #HomeArticle1{
     padding-top: 15%;
   }
-  
+  .iso{
+    width: 35%!important;
+  }
 }
 
 @media screen and (max-width:480px) {
