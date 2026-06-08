@@ -1,11 +1,26 @@
+:root {
+  /* VSK brand palette — lime green on black */
+  --green: #8BC53F;        /* primary brand green (logo lime) */
+  --green-bright: #A8DE3E; /* neon highlight */
+  --green-deep: #5d8a26;   /* darker green for depth/borders */
+  --bg: #0e0e0e;           /* page background (near-black) */
+  --panel: #161a13;        /* green-tinted dark panel */
+}
+
 body#indexBody {
-  background: rgba(14,14,14)!important;
+  background: var(--bg)!important;
 
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
 }
 .galleria {
   height: 500px;
+}
+
+/* Content photos framed in brand green, echoing the VSK design */
+.Art4image {
+  border: 3px solid var(--green);
+  border-radius: 8px;
 }
 
 * {
@@ -55,7 +70,7 @@ body#contactBody {
 }
 
 #ENGHUPage {
-  background-color: #2de1af;
+  background-color: var(--green);
 }
 
 nav {
@@ -101,7 +116,7 @@ nav li a {
 }
 
 nav ul li.active {
-  background-color: #2de1af;
+  background-color: var(--green);
 }
 
 #ProjectNameMobile {
@@ -137,6 +152,7 @@ nav ul li.active {
   display: block;
 }
 
+h1,
 h2 {
   font-size: 40px;
   color: #fff;
@@ -147,7 +163,7 @@ article {
 
 #ButtonUser {
   background-color: transparent;
-  color: #2de1af;
+  color: var(--green);
   border-radius: 5px;
   font-size: 25px;
   font-family: "Montserrat", sans-serif;
@@ -194,10 +210,10 @@ article {
 
 .ButtonFillOut {
   background-color: transparent;
-  color: #2de1af;
+  color: var(--green);
   text-align: center;
   text-decoration: none;
-  border: 2px solid #2de1af;
+  border: 2px solid var(--green);
   border-radius: 10px;
   height: 35px;
   width: 30%;
@@ -206,12 +222,12 @@ article {
 
 #ButtonContactUs {
   background-color: transparent;
-  color: rgb(202, 21, 21);
+  color: var(--green);
   text-align: center;
   text-decoration: none;
   width: 40%;
   height: 35px;
-  border: 2px solid rgb(202, 21, 21);
+  border: 2px solid var(--green);
   border-radius: 10px;
   font-family: "Montserrat", sans-serif;
 }
@@ -346,10 +362,10 @@ article {
   margin-top: 15px;
   font-size: 14px;
   color: #fff;
-  border: 1px solid #2de1af;
+  border: 1px solid var(--green);
   padding: 20px 20px;
   border-radius: 8px;
-  background-color: #2de1af;
+  background-color: var(--green);
 }
 .coin img {
   margin-right: 10px;
@@ -385,7 +401,7 @@ article {
 
 #ButtonInterest {
   background-color: transparent;
-  color: rgb(202, 21, 21);
+  color: var(--green);
   text-align: center;
   text-decoration: none;
   width: 30%;
@@ -393,7 +409,7 @@ article {
   margin-right: 35%;
   margin-bottom: 20px;
   height: 35px;
-  border: 4px solid rgb(202, 21, 21);
+  border: 4px solid var(--green);
   border-radius: 10px;
 }
 #ButtonInterest a {
@@ -620,7 +636,7 @@ article {
 }
 
 .RoadMapBlock {
-  background-color: #2de1af;
+  background-color: var(--green);
   padding: 5%;
   width: 80%;
   border-radius: 10px;
@@ -651,9 +667,9 @@ article {
 #inName {
   width: 100%;
   height: 35px;
-  color: red;
+  color: var(--green);
   background-color: transparent;
-  border-color: rgb(202, 21, 21);
+  border-color: var(--green);
   font-size: 25px;
   text-align: center;
   border-radius: 10px;
@@ -664,8 +680,8 @@ article {
   height: 35px;
   background-color: transparent;
   font-size: 25px;
-  color: red;
-  border-color: rgb(202, 21, 21);
+  color: var(--green);
+  border-color: var(--green);
   border-radius: 10px;
   margin-top: 15px;
   margin-bottom: 5px;
@@ -677,8 +693,8 @@ article {
   width: 100%;
   height: 35px;
   background-color: transparent;
-  color: red;
-  border-color: rgb(202, 21, 21);
+  color: var(--green);
+  border-color: var(--green);
   font-size: 25px;
   border-radius: 10px;
   margin-top: 15px;
@@ -691,8 +707,8 @@ article {
   height: 250px;
   width: 100%;
   background-color: transparent;
-  color: red;
-  border-color: rgb(202, 21, 21);
+  color: var(--green);
+  border-color: var(--green);
   font-size: 25px;
   border-radius: 10px;
   margin-top: 20px;
@@ -702,12 +718,12 @@ article {
 
 #ButtonSendMessage {
   background-color: transparent;
-  color: rgb(202, 21, 21);
+  color: var(--green);
   text-align: center;
   text-decoration: none;
   width: 30%;
   height: 35px;
-  border: 2px solid rgb(202, 21, 21);
+  border: 2px solid var(--green);
   border-radius: 10px;
   font-family: "Montserrat", sans-serif;
 }
@@ -798,7 +814,7 @@ footer .fab {
 
 .progressbarpart {
   height: 5px;
-  border: solid 1px #2de1af;
+  border: solid 1px var(--green);
   width: 16%;
 }
 
@@ -814,7 +830,7 @@ footer .fab {
   justify-content: left;
   align-items: center;
   color: #ffffff;
-  background-color: #2de1af;
+  background-color: var(--green);
 }
 
 .question label {
@@ -845,7 +861,7 @@ div.error {
   height: 35px;
   border: none;
   margin: 2%;
-  color: #2de1af;
+  color: var(--green);
   font-size: 25px;
   border-radius: 10px;
 }
@@ -942,7 +958,7 @@ label {
 #Refresh {
   display: none;
   margin-top: 20px;
-  background-color: #2de1af;
+  background-color: var(--green);
   color: rgba(14,14,14)!important;
   text-align: center;
   text-decoration: none;
@@ -971,7 +987,7 @@ label {
 }
 
 .walletplace {
-  background-color: #2de1af;
+  background-color: var(--green);
   margin: 1%;
   padding: 1%;
   width: 13%;
@@ -1017,11 +1033,11 @@ label {
 }
 
 #walletplace4 {
-  border: 8px solid #2de1af;
+  border: 8px solid var(--green);
 }
 
 #walletplace5 {
-  border: 8px solid #2de1af;
+  border: 8px solid var(--green);
 }
 
 @media only screen and (min-width: 600px) {
@@ -1073,10 +1089,11 @@ label {
     font-size: 32px!important;
   }
 
+  h1,
   h2 {
     font-size: 72px;
   }
- 
+
 
   #ProjectName {
     display: block;
@@ -1163,13 +1180,15 @@ label {
   }
 
   #ButtonContactUs:hover {
-    background-color: rgba(14,14,14)!important;
-    color: rgb(202, 21, 21);
+    background-color: var(--green)!important;
+    color: #0e0e0e;
+    box-shadow: 0 0 18px rgba(139, 197, 63, 0.5);
   }
 
   #ButtonInterest:hover {
-    background-color: rgba(14,14,14)!important;
-    color: rgb(202, 21, 21);
+    background-color: var(--green)!important;
+    color: #0e0e0e;
+    box-shadow: 0 0 18px rgba(139, 197, 63, 0.5);
   }
 
   #ButtonSendMessage {
@@ -1177,8 +1196,9 @@ label {
   }
 
   #ButtonSendMessage:hover {
-    background-color: rgba(14,14,14)!important;
-    color: rgb(202, 21, 21);
+    background-color: var(--green)!important;
+    color: #0e0e0e;
+    box-shadow: 0 0 18px rgba(139, 197, 63, 0.5);
   }
   /*Coins*/
 
@@ -1454,7 +1474,7 @@ section .heading::before {
   left: 50%;
   transform: translateX(-50%);
   bottom: 15%;
-  background-color: rgb(255, 255, 255)!important;
+  background-color: var(--green)!important;
 }
 
 section .heading b {
@@ -1479,7 +1499,7 @@ section .heading1::before {
   left: 54%;
   transform: translateX(0%);
   bottom: 15%;
-  background-color: rgb(202, 21, 21)!important;
+  background-color: var(--green)!important;
 }
 
 section .heading1 b {
@@ -1502,10 +1522,11 @@ section .heading1 b {
   position: relative;
   width: 350px;
   color: #ffffff;
-  background: rgb(202, 21, 21);
+  background: var(--panel);
+  border: 2px solid var(--green);
   margin: 40px 10px;
   padding: 30px;
-  border-radius: 3px;
+  border-radius: 8px;
   transition: 0.3s ease;
 }
 
@@ -1526,6 +1547,17 @@ section .heading1 b {
   border: 8px solid #070c0d;
   border-radius: 50%;
   overflow: hidden;
+}
+
+.wrapper .container .profile .imgBox i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #0e0e0e;
+  color: var(--green);
+  font-size: 46px;
 }
 
 .wrapper .container .profile .imgBox img {
@@ -1589,23 +1621,23 @@ section .heading1 b {
 }
 
 .wrapper .container .social i:hover {
-  color: rgb(202, 21, 21);
+  color: var(--green);
 }
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ here comes the color of the placeholder form*/
-  color: rgba(202, 21, 21, 0.526);
+  color: rgba(139, 197, 63, 0.55);
   opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: rgba(202, 21, 21, 0.526);
+  color: rgba(139, 197, 63, 0.55);
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: rgba(202, 21, 21, 0.526);
+  color: rgba(139, 197, 63, 0.55);
 }
 
 html {
@@ -1656,7 +1688,7 @@ abbr:hover::after {
 }
 .slide {
   height: 80vh;
-  border: #fff solid 1px;
+  border: var(--green) solid 1px;
   border-radius: 15px;
   margin: 5px;
   cursor: pointer;
@@ -1729,8 +1761,8 @@ section.primeiraimagem {
   display: inline-block;
   width: 70px;
   height: 70px;
-  border: 3px solid #ca1515;
-  color:#ca1515;
+  border: 3px solid var(--green);
+  color:var(--green);
   transform: rotate(45deg);
   margin-bottom: 30px;
   margin-top: 16px;
@@ -1742,7 +1774,7 @@ section.primeiraimagem {
   font-size: 26px;
 }
 .service-box:hover .service-icon{
-  background: #ca1515;
+  background: var(--green);
   color: #ddd;
 }
 .service-title{
@@ -1772,5 +1804,178 @@ section.primeiraimagem {
 @media screen and (max-width:480px) {
   .service-box{
     max-width: 100%;
+  }
+}
+
+/* ============================================================
+   UI polish — VSK
+   ============================================================ */
+
+/* Brand wordmark — text-based VSK logo in the brand font/colour,
+   evoking the angular logotype (heavy, italic, slanted). */
+.vsk-wordmark {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  color: var(--green);
+  text-decoration: none;
+  letter-spacing: 2px;
+  transform: skewX(-8deg);
+  transition: color 0.25s ease, transform 0.25s ease, text-shadow 0.25s ease;
+}
+.vsk-wordmark--nav {
+  font-size: 44px;
+  line-height: 1;
+}
+.vsk-wordmark--nav:hover {
+  color: var(--green-bright);
+  text-shadow: 0 0 18px rgba(139, 197, 63, 0.55);
+  transform: skewX(-8deg) translateY(-1px);
+}
+.vsk-wordmark--footer {
+  display: block;
+  width: max-content;
+  margin: 30px auto 12px;
+  font-size: 38px;
+  line-height: 0.9;
+  text-align: center;
+}
+/* Sub-label under the footer wordmark */
+.vsk-wordmark--footer small {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+  transform: skewX(8deg);
+}
+
+/* Nav: subtle separation from content + smoother item hover */
+nav {
+  border-bottom: 1px solid rgba(139, 197, 63, 0.18);
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.5);
+}
+nav li {
+  border-radius: 8px;
+  cursor: pointer;
+}
+nav li:not(.active):hover {
+  background-color: rgba(139, 197, 63, 0.12);
+}
+
+/* Smooth interactions across interactive elements */
+button,
+a,
+.service-box,
+.Art4image,
+input,
+textarea,
+.wrapper .container {
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+    background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+/* Floating "Call now" button — always reachable, key for a service shop */
+#FloatCall {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 50;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--green);
+  color: #0e0e0e;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 17px;
+  text-decoration: none;
+  padding: 14px 20px;
+  border-radius: 50px;
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.45);
+  animation: floatCallPulse 2.4s ease-in-out infinite;
+}
+#FloatCall i {
+  font-size: 19px;
+}
+#FloatCall:hover {
+  background-color: var(--green-bright);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(139, 197, 63, 0.55);
+}
+@keyframes floatCallPulse {
+  0%,
+  100% {
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.45),
+      0 0 0 0 rgba(139, 197, 63, 0.5);
+  }
+  50% {
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.45),
+      0 0 0 12px rgba(139, 197, 63, 0);
+  }
+}
+/* On small screens collapse to a compact circular icon */
+@media screen and (max-width: 600px) {
+  #FloatCall span {
+    display: none;
+  }
+  #FloatCall {
+    padding: 0;
+    width: 58px;
+    height: 58px;
+    justify-content: center;
+    right: 16px;
+    bottom: 16px;
+  }
+  #FloatCall i {
+    font-size: 23px;
+  }
+}
+
+/* Accessible focus states on the contact form */
+#inName:focus,
+#inMail:focus,
+#inPhone:focus,
+#inMessage:focus {
+  outline: none;
+  border-color: var(--green-bright);
+  box-shadow: 0 0 0 3px rgba(139, 197, 63, 0.25);
+}
+
+/* Punchier hero stats */
+.InfoArt1 {
+  color: var(--green);
+  font-weight: 900;
+}
+
+/* Subtle hover lift on cards and photos */
+.service-box:hover {
+  transform: translateY(-6px);
+}
+.Art4image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 26px rgba(139, 197, 63, 0.3);
+}
+.wrapper .container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 28px rgba(139, 197, 63, 0.25);
+}
+
+/* Keyboard focus visibility for nav items */
+nav li a:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 3px;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  #FloatCall {
+    animation: none;
+  }
+  * {
+    transition: none !important;
   }
 }

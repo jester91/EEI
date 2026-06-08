@@ -34,4 +34,4 @@ Disallow:
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: https://eei-autoszerviz.hu/
+Sitemap: https://vsk-autoszerviz.hu/sitemap.xml
