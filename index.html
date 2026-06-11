@@ -127,7 +127,11 @@
 
 <body id="indexBody">
   <div class="container1">
-    <p id="ProjectNameMobile">VSK Autószerviz</p>
+    <p id="ProjectNameMobile">
+      <a href="#" class="vsk-wordmark vsk-wordmark--nav" aria-label="VSK Autószerviz – főoldal">
+        <img src="./Images/vsk-logo.png" alt="VSK Autószerviz" />
+      </a>
+    </p>
     <div id="myLinks">
       <nav>
         <p id="ProjectName">
@@ -326,12 +330,6 @@
               <h3>Kerékcsere</h3>
             </div>
             <div class="slide" style="
-                  background-image: url('./Images/szelvedojavitas.png');
-                ">
-              <h3>Szélvédő javítás</h3>
-            </div>
-
-            <div class="slide" style="
                   background-image: url('./Images/motorfelujitas.png');
                 ">
               <h3>Motorfelújítás</h3>
@@ -402,7 +400,7 @@
       </div>
 
       <div id="CS3">
-        <img class="Art4image" loading="lazy" src="./Images/1de7a6fc-6fd8-4398-9d28-e3669efa36fd.jpeg"
+        <img class="Art4image" loading="lazy" src="./Images/gumicsere.png"
           alt="VSK Autószerviz műhely – gumiszerviz és gumicsere" />
         <p>
           Szezonális gumiváltástól a kerékszerelésig és a kerékegyensúlyozásig mindent elvégzünk. Gyorsan, precízen –
@@ -418,6 +416,14 @@
           Nem csak a műszaki állapot, hanem az autó megjelenése is fontos. Külső és belső tisztítás, polírozás,
           kárpittisztítás mindezt professzionális eszközökkel és minőségi tisztítószerekkel végezzük, hogy autód ne csak
           jól működjön, hanem jól is nézzen ki.
+          <a style="color: var(--green)" target="_blank" onclick="FunctionContact()"><br>Érdekel</a>
+        </p>
+      </div>
+      <div id="CS5">
+        <img class="Art4image" loading="lazy" src="./Images/szelvedojavitas.png"
+          alt="VSK Autószerviz műhely – tisztítás és polírozás" />
+        <p>
+          Akár legyen szó kisebb kavicsfelverődésről, vagy akár nagyobb szélvédő sérülésről keressen minket bizalommal! 
           <a style="color: var(--green)" target="_blank" onclick="FunctionContact()"><br>Érdekel</a>
         </p>
       </div>
@@ -517,23 +523,10 @@
 
       </div>
     </section>
-    <form id="HomeForm" action="https://formsubmit.co/europeelectricindustries@gmail.com" method="POST" novalidate>
-      <h2 id="Contact">Kapcsolat</h2>
-      <input type="hidden" name="_subject" value="Szerviz megkereses" />
-      <input id="inName" name="Név" type="text" placeholder="Neved" required />
-      <input id="inMail" name="EmailCím" type="email" placeholder="Email címed" required />
-      <input id="inPhone" name="Telefonszám" type="tel" placeholder="Telefonszámod" pattern="[0-9+()\s\-]{7,20}"
-        title="Add meg a telefonszámod (pl. +36 30 820 5128)" required />
-      <input type="hidden" name="_next" value="https://vsk.netlify.app" />
-      <textarea id="inMessage" name="Üzenet"
-        placeholder="Szükséges adatok, mint például szerviz igény és az alvázszámod" required></textarea>
-      <div class="errorTxt"></div>
-      <input id="ButtonSendMessage" type="submit" value="Küldés" />
       <h3 style="text-align: center; color: white; font-size: 28px;">
-        Vagy keress minket telefonon <br />
+        Keress minket telefonon <br />
         <a href="tel:+36308205128" style="text-decoration: none; color: var(--green)">+36308205128</a>
       </h3>
-    </form>
     <section>
       <div class="heading1"><b>Ahol megtalálsz</b> minket</div>
       <iframe

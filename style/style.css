@@ -142,19 +142,10 @@ nav ul li.active {
 }
 
 #ProjectNameMobile {
-  z-index: 5;
-  background-color: rgba(14,14,14)!important;
-  width: 100%;
-  display: block;
-  position: fixed;
-  left: 0;
-  top: 0;
   float: left;
   color: #ffffff;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 0;
-  padding-left: 25px;
+  padding-top: 0;
+  margin-left: 3%;
   font-weight: 800;
 }
 
@@ -1947,6 +1938,28 @@ section.primeiraimagem {
 @media screen and (max-width:480px) {
   .service-box{
     max-width: 100%;
+  }
+  .containerslide {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 8px;
+  }
+  .slide {
+    scroll-snap-align: start;
+    min-width: 70vw;
+    height: 60vw;
+    flex: none;
+  }
+  .frame {
+    height: auto;
+    min-height: 65vw;
+  }
+  .slide h3 {
+    font-size: 16px;
+    top: 12px;
+    left: 14px;
+    right: 14px;
   }
 }
 
